@@ -14,10 +14,6 @@ docker network create reseaux_sans_internet
 
 Basic example:
 ```
-docker run --gpus all --restart unless-stopped -p 6080:6080 --name nginx-reverse-proxy -d comfyui
-```
-
-```
 docker run \
 --net reseaux_sans_internet \
 --restart unless-stopped \
