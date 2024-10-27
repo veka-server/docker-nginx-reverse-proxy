@@ -7,6 +7,11 @@ Build image:
 docker build -t nginx-reverse-proxy https://github.com/veka-server/docker-nginx-reverse-proxy.git#main
 ```
 
+Creer le reseau isoler si necessaire:
+```
+docker network create reseaux_sans_internet
+```
+
 Basic example:
 ```
 docker run --gpus all --restart unless-stopped -p 6080:6080 --name nginx-reverse-proxy -d comfyui
