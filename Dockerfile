@@ -11,7 +11,7 @@ COPY index.html /usr/share/nginx/html/index.html
 RUN apk upgrade --update-cache --available && \
     mkdir /etc/nginx/ssl && \
     apk add openssl && \
-    openssl req -x509 -newkey rsa:4096 -nodes -out /etc/nginx/ssl/nginx-selfsigned.crt -keyout /etc/nginx/ssl/nginx-selfsigned.key -subj "/C=US/ST=NY/L=New York/O=Acme Inc/CN=localhost"
+    openssl req -x509 -newkey rsa:4096 -nodes -out /etc/nginx/ssl/nginx-selfsigned.crt -keyout /etc/nginx/ssl/nginx-selfsigned.key -subj "/C=US/ST=NY/L=New York/O=Acme Inc/CN=server1.local"
     
 # Expose le port 80 (ou 443 pour HTTPS)
 EXPOSE 80
