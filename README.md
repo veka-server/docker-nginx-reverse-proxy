@@ -14,8 +14,10 @@ docker run --gpus all --restart unless-stopped -p 6080:6080 --name nginx-reverse
 
 ```
 docker run \
+--net reseaux_sans_internet \
 --restart unless-stopped \
 -p 80:80  \
 --name nginx-reverse-proxy \
--d nginx-reverse-proxy
+-d nginx-reverse-proxy; \
+docker network connect bridge nginx-reverse-proxy
 ```
