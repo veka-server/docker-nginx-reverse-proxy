@@ -1,8 +1,6 @@
 # docker-nginx-reverse-proxy
 
-![Docker Pulls](https://img.shields.io/github/v/release/veka-server/docker-nginx-reverse-proxy?label=GHCR)
-
-![Build Docker](https://github.com/veka-server/docker-nginx-reverse-proxy/actions/workflows/docker-release.yml/badge.svg)
+![Docker Pulls](https://img.shields.io/github/v/release/veka-server/docker-nginx-reverse-proxy?label=GHCR) ![Build Docker](https://github.com/veka-server/docker-nginx-reverse-proxy/actions/workflows/build-central.yml.yml/badge.svg)
 
 ```bash
 $ docker pull ghcr.io/veka-server/docker-nginx-reverse-proxy:latest
