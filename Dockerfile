@@ -4,7 +4,7 @@ FROM nginx:alpine
 # Copie le fichier de configuration nginx.conf dans le conteneur
 COPY nginx.conf /etc/nginx/nginx.conf
 
-# Copie le fichier de configuration .htpasswd dans le conteneur
+# Copie le fichier de configuration .htpasswd dans le conteneur ( user: admin   password: admin )
 COPY htpasswd /etc/nginx/.htpasswd
 
 # Copier le fichier index.html dans le dossier par défaut de Nginx
