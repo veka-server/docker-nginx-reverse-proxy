@@ -4,6 +4,9 @@ FROM nginx:alpine
 # Copie le fichier de configuration nginx.conf dans le conteneur
 COPY nginx.conf /etc/nginx/nginx.conf
 
+# Copie le fichier de configuration nginx.conf dans le conteneur
+COPY htpasswd /etc/nginx/.htpasswd
+
 # Copier le fichier index.html dans le dossier par défaut de Nginx
 COPY index.html /usr/share/nginx/html/index.html
 
